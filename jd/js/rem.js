@@ -2,7 +2,7 @@ let documentElement = document.documentElement;
 
 function callback() {
     let clientWidth = documentElement.clientWidth;
-    clientWidth = clientWidth < 628 ? clientWidth : 320;
+    clientWidth = clientWidth < 628 ? clientWidth : 540;
     documentElement.style.fontSize = clientWidth / 20 + 'px';
 }
 
