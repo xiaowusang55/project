@@ -82,6 +82,7 @@ body {
     height: 30px;
     background-color: #f7f7f7;
     margin-left: 10px;
+    flex-grow: 1;
 }
 
 .menu-login {
@@ -102,10 +103,23 @@ body {
 
 /* 底部导航 */
 .nav {
-    height: 44px;
-    background-color: rgb(167, 76, 76);
+    background-color: #ffffff;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
 }
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav>div>a {
+    display: block;
+    text-align: center;
+}
+.nav>div img {
+    width: 3.1875rem;
+}
+
+
