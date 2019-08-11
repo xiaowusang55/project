@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JD</title>
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="./font/homefont/jd/iconfont.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
@@ -24,7 +25,24 @@
             <div class="menu-login">登录</div>
         </div>
 
-        <div class="section"></div>
+        <div class="section">
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
         <div class="nav">
             <div><a href="javascript:"><img src="./image/navimg/homepage.png" alt=""></a></div>
             <div><a href="javascript:"><img src="./image/navimg/category.png" alt=""></a></div>
@@ -34,21 +52,18 @@
         </div>
     </div>
 
-
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
     <script src="./js/rem.js"></script>
     <script src="./js/home.js"></script>
     <script>
-        
-        document.addEventListener("DOMContentLoaded", () => {
-            
-            console.log("ScreenWidth:" + document.documentElement.offsetWidth);
-        })
+        // document.addEventListener("DOMContentLoaded", () => {
 
-        window.addEventListener("orientationchange" in window ? "onreadystatechange" : "resize", () => {
-            console.log("ScreenWidth(orientated):" + document.documentElement.offsetWidth);
-        })
-        
-    
+        //     console.log("ScreenWidth:" + document.documentElement.offsetWidth);
+        // })
+
+        // window.addEventListener("orientationchange" in window ? "onreadystatechange" : "resize", () => {
+        //     console.log("ScreenWidth(orientated):" + document.documentElement.offsetWidth);
+        // })
     </script>
 </body>
 
