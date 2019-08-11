@@ -128,22 +128,33 @@ a {
 
 .swiper-container.banner .swiper-pagination-bullet {
     opacity: 1;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     border: 1px solid #ffffff;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 100%;
+    border-radius: 7px;
 }
 
 .swiper-container.banner .swiper-pagination-bullet-active {
     background-color: #ffffff;
 }
 
+.banner.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%
+}
+
+
 
 /* swiper category */
 .swiper-container.category {
     width: 100%;
     margin-top: -8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .page1,
@@ -153,8 +164,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #ffffff;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 }
 
 .page1>div,
@@ -181,7 +190,7 @@ a {
     font-family: -apple-system, Helvetica, sans-serif
 }
 
-.swiper-pagination.category .swiper-pagination-bullet {
+.categoryPa .swiper-pagination-bullet {
     box-sizing: border-box;
     width: 5px;
     height: 5px;
@@ -189,29 +198,70 @@ a {
     background-color: #cccccc;
 }
 
-.swiper-pagination.category .swiper-pagination-bullet-active {
+.categoryPa .swiper-pagination-bullet-active {
     background: #f07678;
     width: 10px;
     height: 5px;
     border-radius: 3px;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets {
+.category.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: 2px;
+    left: 0;
+    width: 100%;
 }
 
 
+/* swiper promotion */
+.swiper-container.banner {
+    width: 100%;
+}
+
+.pro-banner {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../image/promotionimg/2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 30px; */
+    height: 1.875rem;
+}
+
+.pro-banner .pro-banner-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 185px;
+}
+.pro-banner .pro-banner-left .title {
+    align-self: flex-end;
+}
+.pro-banner .pro-banner-left .title a {
+    display: block;
+    width: 69px;
+}
+.pro-banner .pro-banner-left .title a img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.pro-banner .pro-banner-left .time {
+    align-self: baseline;
+    font-size: 12px;
+    font-weight: 700;
+}
+.pro-banner .pro-banner-left .timer {
+    align-self: baseline;
+    font-size: 12px;
+}
 
 
-
-
-
-
-
-
-
-
-
+.pro-banner-right {
+    
+}
 
 
 

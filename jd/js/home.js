@@ -1,25 +1,36 @@
 
-var mySwiper = new Swiper('.swiper-container.banner', {
+var mySwiper = new Swiper('.banner', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination.banner',
+        el: '.bannerPa',
     },
     autoplay: {
         delay: 1000,
     },
 });
 
-var mySwiper = new Swiper('.swiper-container.category', {
+var mySwiper = new Swiper('.category', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination.category',
+        el: '.categoryPa',
+    },
+});
+
+var mySwiper = new Swiper('.pro-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: 'pro-sliderPa',
     },
 });
